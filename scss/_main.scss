@@ -1,0 +1,182 @@
+.container{
+    margin: 0 auto;
+}
+
+// 上頭選單 
+.title{
+    background-color: #AA0601;
+    display: flex;
+    justify-content: space-between;
+    .glasses-logo{
+        margin: 30px 0 30px 88px;
+    }
+    .menu{
+        display: flex;
+        margin-right: 88px;
+        li{
+            padding: 40px 64px 40px 0;
+            .menu-list{
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+// 大banner 
+.banner{
+    background-image: url('https://upload.cc/i1/2020/04/27/A9uJHK.png');
+    height: 840px;
+    color: #650300;
+    font-weight: bold;
+    .banner-text{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding: 350px;
+        p{
+            font-size: 36px;
+            line-height: 1.5;
+        }
+        h1{
+            font-size: 64px;
+        }
+    }
+}
+
+// 專業介紹
+.profession{
+    background-color: #AA06010D;
+    h2{
+        font-size: 48px;
+        line-height: 1.5;
+        font-weight: bold;
+        padding: 64px 0;
+        color: #650300;
+        text-align: center;
+    }
+    ul{
+        padding: 0 360px;
+        display: flex;
+        justify-content: center;
+        padding: 0 0 80px 0;
+        li{
+            padding: 12px;
+            text-align: center;
+            padding: 0 24px;
+            h4{
+                padding: 40px 0 4px 0;
+                color: #650300;
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 1.5;
+            }
+            p{
+                width: 208px;
+                text-align: left;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+        .last-icon{
+            padding-bottom: 23px;
+        }
+    }
+}
+
+// 鏡框介紹
+.pattern-content {
+    color: #650300;
+    h2{
+        font-size: 48px;
+        line-height: 1.5;
+        font-weight: bold;
+        padding: 64px 0 60px 0 ;
+        text-align: center;
+
+    }
+    li{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 32px;
+        .icon{
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            h2{
+                color: #AA0601;
+                font-style: italic;
+                padding: 0 8px;
+
+            }
+        }
+    }
+}
+
+// 聯名設計鏡框
+.glasses-design{
+    background-image: url('https://upload.cc/i1/2020/04/27/ej2gVB.png');
+    h2{
+        font-weight: 900;
+        font-size: 48px;
+        color:#fff;
+        padding: 64px 0 60px 0;
+        text-align: center;
+    }
+    
+    .img-up{  // 左大圖
+        padding: 0 190px;
+        display: flex;
+        img{
+            padding: 0 8px;
+        }
+    }
+    .right-down{
+        display: flex;
+        padding: 8px 0 0 0 ;
+        .text{
+            padding-top:    8px;
+            width: 259px;
+            height: 167px;
+            background-color: #fff;
+            background-image: url('https://upload.cc/i1/2020/04/27/k4SmGM.png');
+            position: relative;
+            p{
+                top: 20%;
+                left: 10%;
+                position: absolute;
+                background-color: #fff;
+                color: #AA0601;
+                font-size: 72px;
+                height: 105px;
+                width: 315px;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                padding-left: 32px;
+                img{
+                    padding-left: 17px;
+                }
+            }
+        }
+    }
+    .img-medium{
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        position: relative;
+        img{
+            padding: 0 4px;
+        }
+        h1{
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            color: #AA0601;
+            font-size: 72px;
+            line-height: 1.5;
+            }
+    }
+}

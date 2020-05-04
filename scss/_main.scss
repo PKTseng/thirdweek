@@ -1,7 +1,5 @@
 
-.container{
-    margin: 0 auto;
-}
+
 
 // 上頭選單 
 .title{
@@ -16,9 +14,9 @@
     .menu{
         display: flex;
         margin-right: 88px;
-        li{
-            padding: 40px 64px 40px 0;
-            .menu-list{
+        .menu-list{
+            padding: 40px 0 40px 64px;
+            a{
                 text-decoration: none;
                 color: #fff;
                 font-size: 20px;
@@ -31,18 +29,21 @@
 .banner{
     background-image: url('https://upload.cc/i1/2020/04/27/A9uJHK.png');
     height: 840px;
-    color: #650300;
-    font-weight: bold;
-    .banner-text{
+    background-size: cover;
+    background-position: center center;
+    .banner-block{
         display: flex;
-        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
         text-align: right;
-        padding: 350px;
-        p{
-            font-size: 36px;
-        }
-        h1{
-            font-size: 64px;
+        @include pad(){
+            padding-right: 48px;
+            h1{
+                font-size: 48px;
+            }
+            p{
+                font-size: 20px;
+            }
         }
     }
 }
@@ -51,31 +52,23 @@
 .profession{
     background-color: #AA06010D;
     h2{
-        font-size: 48px;
-        font-weight: bold;
         padding: 64px 0;
-        color: #650300;
         text-align: center;
     }
-    ul{
-        padding: 0 360px;
+    .profession-items{
         display: flex;
         justify-content: center;
-        padding: 0 0 80px 0;
-        li{
-            padding: 12px;
+        flex-wrap: wrap;
+        padding-bottom: 80px;
+        .profession-items-list{
             text-align: center;
             padding: 0 24px;
             h4{
                 padding: 40px 0 4px 0;
-                color: #650300;
-                font-size: 24px;
-                font-weight: bold;
             }
             p{
                 width: 208px;
                 text-align: left;
-                font-size: 16px;
             }
         }
         .last-icon{
@@ -84,15 +77,13 @@
     }
 }
 
-// 鏡框介紹
-.pattern-content {
-    color: #650300;
-    h2{
-        font-size: 48px;
-        font-weight: bold;
-        padding: 64px 0 60px 0 ;
-        text-align: center;
 
+// 經典系列鏡框
+.classicSeries{
+    h2{
+        font-weight: bold;
+        padding: 64px 0 80px 0 ;
+        text-align: center;
     }
     li{
         display: flex;
@@ -106,7 +97,6 @@
                 color: #AA0601;
                 font-style: italic;
                 padding: 0 8px;
-
             }
         }
     }
@@ -116,31 +106,29 @@
 .glasses-design{
     background-image: url('https://upload.cc/i1/2020/04/27/ej2gVB.png');
     background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center center;
+    background-size: cover;
+    background-position: center center;
     h2{
-        font-weight: 900;
-        font-size: 48px;
         color:#fff;
         padding: 64px 0 60px 0;
         text-align: center;
     }
 
     // 左大圖
-    .img-up{  
-        padding: 0 190px;
+    .imgUp{  
         display: flex;
+        justify-content: center;
         img{
             padding: 0 4px;
         }
     }
 
     // 右下3塊
-    .right-down{
+    .rightDown{
         display: flex;
         padding: 4px 0 0 0 ;
         justify-content: space-between;
-        .right-down-two{
+        .rightDown-two{
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -153,43 +141,40 @@
             height: 167px;
             background-color: #fff;
             background-image: url('https://upload.cc/i1/2020/04/27/k4SmGM.png');
-            position: relative;
-            right: 90px;
-            p{
-                top: 20%;
-                left: 10%;
-                position: absolute;
-                background-color: #fff;
-                color: #AA0601;
-                font-size: 72px;
-                height: 105px;
-                width: 315px;
-                display: flex;
-                align-items: center;
-                font-weight: bold;
-                padding-left: 32px;
-                & :hover{
-
-                }
-                img{
-                    padding-left: 17px;
-                }
-            }
+            // position: relative;
+            // right: 90px;
+            // p{
+            //     top: 20%;
+            //     left: 10%;
+            //     position: absolute;
+            //     background-color: #fff;
+            //     color: #AA0601;
+            //     font-size: 72px;
+            //     height: 105px;
+            //     width: 315px;
+            //     display: flex;
+            //     align-items: center;
+            //     font-weight: bold;
+            //     padding-left: 32px;
+            //     img{
+            //         padding-left: 17px;
+            //     }
+            // }
         }
     }
     // 中間兩大張
-    .img-medium{
+    .imgMedium{
         display: flex;
         justify-content: center;
         padding-top: 60px;
         
         .img-1{
             margin-right: 30px;
-            position: relative;
+            // position: relative;
             background:hsla(0,0%,100%,0.3);
         }
         h1{
-            position: absolute;
+            // position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);

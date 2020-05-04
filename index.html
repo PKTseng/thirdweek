@@ -8,14 +8,14 @@
 </head>
 <body>
     <!-- 上頭選單 -->
-    <div class="title container">
-        <img src="./image/logo-new_工作區域 1.png" alt="" class='glasses-logo'>
-        <ul class="menu">
-            <li><a href="#" class="menu-list">系列鏡框</a></li>
-            <li><a href="#" class="menu-list">門市據點</a></li>
-            <li><a href="#" class="menu-list">部落格</a></li>
-            <li><a href="#" class="menu-list">常見問題</a></li>
-        </ul>
+    <div class="title ">
+            <img src="./image/logo-new_工作區域 1.png" alt="" class='glasses-logo'>
+            <ul class="menu">
+                <li><a href="#" class="menu-list">系列鏡框</a></li>
+                <li><a href="#" class="menu-list">門市據點</a></li>
+                <li><a href="#" class="menu-list">部落格</a></li>
+                <li><a href="#" class="menu-list">常見問題</a></li>
+            </ul>
     </div>
 
     <!-- 大banner -->
@@ -86,15 +86,16 @@
     <div class="img-up">
         <!-- 左大圖 -->
         <img src="./image/zac-wolff-2qfYizn95pk-unsplash.png" alt="">
-        <!-- 以下為右邊4塊 -->
-        <div>
+        <!-- 右邊4張 -->
+        <div class="img-right">
             <img src="./image/61.png" alt="">
-
+                
             <!-- 右下3塊 -->
             <div class="right-down">
-                <!-- 小孩眼鏡圖 -->
+            <!-- 小孩眼鏡圖 -->
                 <img src="./image/24.png" alt="">
-                <div>
+                <!-- 右下兩張 -->
+                <div class="right-down-two">
                 <!-- 瞪你圖 -->
                     <img src="./image/34.png" alt=""> 
                     <!-- 最右下mark -->
@@ -109,50 +110,139 @@
 
     <!-- 中間兩大張 -->
     <div class="img-medium">
-        <div>
-            <img src="./image/14.png" alt="" class="Double">
+        <div class="img-1">
+            <img src="./image/14.png" alt="">
             <h1>Double A+</h1>
         </div>
-        <div>
-            <img src="./image/39.png" alt="" class="YOUTH">
+        <div class="img-1">
+            <img src="./image/39.png" alt="">
             <h1>YOUTH</h1>
         </div>
     </div>
-
+<!-- 顧客推薦 -->
     <div class="img-down">
         <h2>顧客推薦</h2>
         <ul>
             <li>
                 <img src="./image/18.png" alt="">
-                <p>Jessy</p>
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <p>Last updated 3 mins ago</p>
+                <div class="cardBody">
+                    <h6>Jessy</h6>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="gray-text">Last updated 3 mins ago</p>
+                </div>
+                    
             </li>
             <li>
                 <img src="./image/25.png" alt="">
-                <p>Karen</p>
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <p>Last updated 3 mins ago</p>
+                <div class="cardBody">
+                    <h6>Karen</h6>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="gray-text">Last updated 3 mins ago</p>
+                </div>
             </li>
             <li>
                 <img src="./image/36.png" alt="">
-                <p>Chelsea</p>
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <p>Last updated 3 mins ago</p>
+                <div class="cardBody">
+                    <h6>Chelsea</h6>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="gray-text">Last updated 3 mins ago</p>
+                </div>
             </li>
             <li>
                 <img src="./image/45.png" alt="">
-                <p>Jane</p>
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <p>Last updated 3 mins ago</p>
+                <div class="cardBody">
+                    <h6>Jane</h6>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="gray-text">Last updated 3 mins ago</p>
+                </div>
             </li>
         </ul>
     </div>
-
-
-
-
 </div>
+
+<!-- 聯絡我們 -->
+<section class="contact container">
+    <div class="container">
+        <h2 class="sectionTitle">聯絡我們</h2>
+        <p class="contactText">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+        <form id="contact" action="" method="post">
+            <label for="typeName">姓名</label>
+            <input id="typeName" type="text" placeholder="陳小明">
+            
+            <label for="typePhone">聯絡電話</label>
+            <input id="typePhone" type="text" placeholder="0912-345-678">
+            
+            <label for="typeMail">電子郵件</label>
+            <input id="typeMail" type="text" placeholder="example@email.com">
+            
+            <label for="typeIdeas">意見反應</label>
+            <textarea id="typeIdeas" placeholder="請輸入您的意見"></textarea>
+            
+            <input id="agree" type="checkbox" value="agree">
+            <label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+            
+            <div class="submit">
+                <input  type="submit" value="確認送出">
+            </div>      
+        </form>      
+    </div>
+</section>
+
+<!-- footer -->
+<section class="footer container">
+    <div class="footer-up">
+        <div class="footer-right">
+            <ul class="footer-right-list">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">系列鏡框</a></li>
+                <li><a href="#">門市據點</a></li>
+                <li><a href="#">部落格</a></li>
+                <li><a href="#">常見問題</a></li>
+            </ul>
+            <h3 class="phone">
+                <img src="./image/ic_phone_48px.svg" alt="">0800-000-000
+            </h3>
+            <h3 class="mail">
+                <img src="./image/ic_mail_outline_24px.svg" alt="">glasses@business.com
+            </h3>
+        </div>
+        <div class="footer-left">
+            <ul class="footer-left-list">
+                <li>
+                    <img src="./image/ic_social_fb.svg" alt="">
+                </li>
+                <li>
+                    <img src="./image/ic_social_ig.svg" alt="">
+                </li>
+                <li>
+                    <img src="./image/ic_social_line.svg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-down">
+        <div class="footer-down-left">
+            <h3>
+                <img src="./image/logo-new_工作區域 1.png" alt="">Copyright © 2020 Glasses.All rights reserved.
+            </h3>
+        </div>
+        <ul class="footer-down-right">
+            <li>
+                <p>隱私權政策</p>
+            </li>
+            <li>
+                <p>服務條款</p>
+            </li>
+        </ul>
+    </div>
+    
+</section>
+
+
+
+
+
+
 
 
 
@@ -160,9 +250,4 @@
 
 </body>
 </html>
-
-
-
-
-<!-- 民間有很多課程可以上，但你孤軍奮戰甚至自己找資料讀文件，這讓我很欽佩，雖然我有老師跟助教團可以問問題，但基本上都是一個人在跑 -->
 

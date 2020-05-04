@@ -1,3 +1,4 @@
+
 .container{
     margin: 0 auto;
 }
@@ -9,6 +10,8 @@
     justify-content: space-between;
     .glasses-logo{
         margin: 30px 0 30px 88px;
+        background-position: center center;
+        background-size: cover;
     }
     .menu{
         display: flex;
@@ -19,7 +22,6 @@
                 text-decoration: none;
                 color: #fff;
                 font-size: 20px;
-                line-height: 1.5;
             }
         }
     }
@@ -38,7 +40,6 @@
         padding: 350px;
         p{
             font-size: 36px;
-            line-height: 1.5;
         }
         h1{
             font-size: 64px;
@@ -51,7 +52,6 @@
     background-color: #AA06010D;
     h2{
         font-size: 48px;
-        line-height: 1.5;
         font-weight: bold;
         padding: 64px 0;
         color: #650300;
@@ -71,13 +71,11 @@
                 color: #650300;
                 font-size: 24px;
                 font-weight: bold;
-                line-height: 1.5;
             }
             p{
                 width: 208px;
                 text-align: left;
                 font-size: 16px;
-                line-height: 1.5;
             }
         }
         .last-icon{
@@ -91,7 +89,6 @@
     color: #650300;
     h2{
         font-size: 48px;
-        line-height: 1.5;
         font-weight: bold;
         padding: 64px 0 60px 0 ;
         text-align: center;
@@ -118,6 +115,9 @@
 // 聯名設計鏡框
 .glasses-design{
     background-image: url('https://upload.cc/i1/2020/04/27/ej2gVB.png');
+    background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center center;
     h2{
         font-weight: 900;
         font-size: 48px;
@@ -125,24 +125,36 @@
         padding: 64px 0 60px 0;
         text-align: center;
     }
-    
-    .img-up{  // 左大圖
+
+    // 左大圖
+    .img-up{  
         padding: 0 190px;
         display: flex;
         img{
-            padding: 0 8px;
+            padding: 0 4px;
         }
     }
+
+    // 右下3塊
     .right-down{
         display: flex;
-        padding: 8px 0 0 0 ;
+        padding: 4px 0 0 0 ;
+        justify-content: space-between;
+        .right-down-two{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        // 箭頭圖片
         .text{
-            padding-top:    8px;
+            margin-top:    8px;
             width: 259px;
             height: 167px;
             background-color: #fff;
             background-image: url('https://upload.cc/i1/2020/04/27/k4SmGM.png');
             position: relative;
+            right: 90px;
             p{
                 top: 20%;
                 left: 10%;
@@ -156,27 +168,185 @@
                 align-items: center;
                 font-weight: bold;
                 padding-left: 32px;
+                & :hover{
+
+                }
                 img{
                     padding-left: 17px;
                 }
             }
         }
     }
+    // 中間兩大張
     .img-medium{
         display: flex;
         justify-content: center;
         padding-top: 60px;
-        position: relative;
-        img{
-            padding: 0 4px;
+        
+        .img-1{
+            margin-right: 30px;
+            position: relative;
+            background:hsla(0,0%,100%,0.3);
         }
         h1{
             position: absolute;
             top: 50%;
-            right: 50%;
-            color: #AA0601;
+            left: 50%;
+            transform: translate(-50%,-50%);
             font-size: 72px;
-            line-height: 1.5;
+            color:#AA0601;
+            font-weight: bold;
+            white-space:nowrap
+        }
+    }
+} 
+
+// 顧客推薦
+.img-down{
+    h2{
+        padding: 0;
+        font-size: 48px;
+        margin-top: 144px
+    }
+    ul{
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        li{
+            margin-right: 24px;
+            max-width: 282px;
+            
+            .cardBody{
+                border: 1px solid #DEE2E6;
+                border-top: none;
+                color: #212529;
+                h6{
+                    padding: 16px 10px;
+                    font-weight: bold;
+                }
+                p{
+                    padding: 0 10px 16px;
+                    max-width: 100%;
+                }
+                .gray-text{
+                    color: #707070;
+                    
+                }
             }
+        }
+    }
+}
+
+// 聯絡我們
+.contact{
+    background: #AA06010D;
+    margin-top: 80px;
+    .container{
+        width: 762px;
+    }
+    .sectionTitle{
+        font-weight: bold;
+        font-size: 48px;
+        padding: 64px 0 24px 0;
+        text-align: center;
+    }
+    .contactText{
+        font-size: 20px;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    label{
+        font-size: 16px;
+        text-align: left;
+    }
+    input[type="text"], textarea {
+        width: 100%;
+        margin-top: 4px;
+        margin-bottom: 16px;
+        padding: 14px 16px;
+        border: 1px solid #000;
+        background-color: transparent;
+    }
+    .submit {
+        margin-top: 42px;
+        text-align: center;
+        padding-bottom: 92px;
+        input{
+            width: 180px;
+            height: 54px;
+            background: #AA0601;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+
+// footer
+.footer{
+    background-color: #AA0601;
+    padding: 0 385px;
+    .footer-up{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 24px;
+        .footer-right{
+            margin-top: 48px;
+            .footer-right-list{
+                display: flex;
+                padding-bottom: 32px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    padding-right: 48px;
+                }
+            }
+            .phone , .mail{
+                font-size: 36px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                padding-bottom: 16px;
+            } 
+            .mail{
+                    img{
+                        padding-right: 12px;
+                    }
+                }
+                .phone{
+                    img{
+                        padding-right: 23px;
+                    }
+                }
+        }
+        .footer-left{
+            margin-top: 36px;
+            .footer-left-list{
+                display: flex;
+                li{
+                    padding-left: 32px;
+                }
+            }
+        }
+    }
+    .footer-down{
+        padding-top: 24px;
+        padding-bottom: 27px;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        h3{
+            display: flex;
+            align-items: center;
+            img{
+                padding-right: 38px;
+            }
+        }
+        .footer-down-right{
+            display: flex;
+            li{
+                padding-left: 62px;
+            }
+        }
     }
 }

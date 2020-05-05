@@ -51,7 +51,7 @@
 // 專業介紹
 .profession{
     background-color: #AA06010D;
-    h2{
+    h3{
         padding: 64px 0;
         text-align: center;
     }
@@ -108,13 +108,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    h2{
+    h3{
         color:#fff;
         padding: 64px 0 60px 0;
         text-align: center;
     }
 
-    // 左大圖
     .imgUp{  
         display: flex;
         justify-content: center;
@@ -126,8 +125,9 @@
     // 右下3塊
     .rightDown{
         display: flex;
-        padding: 4px 0 0 0 ;
+        padding-top: 4px;
         justify-content: space-between;
+        // 右下兩張
         .rightDown-two{
             display: flex;
             flex-direction: column;
@@ -135,108 +135,100 @@
         }
 
         // 箭頭圖片
-        .text{
-            margin-top:    8px;
-            width: 259px;
-            height: 167px;
+        .more-text{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 8px;
             background-color: #fff;
-            background-image: url('https://upload.cc/i1/2020/04/27/k4SmGM.png');
-            // position: relative;
-            // right: 90px;
-            // p{
-            //     top: 20%;
-            //     left: 10%;
-            //     position: absolute;
-            //     background-color: #fff;
-            //     color: #AA0601;
-            //     font-size: 72px;
-            //     height: 105px;
-            //     width: 315px;
-            //     display: flex;
-            //     align-items: center;
-            //     font-weight: bold;
-            //     padding-left: 32px;
-            //     img{
-            //         padding-left: 17px;
-            //     }
-            // }
         }
     }
     // 中間兩大張
     .imgMedium{
-        display: flex;
-        justify-content: center;
         padding-top: 60px;
-        
-        .img-1{
-            margin-right: 30px;
-            // position: relative;
-            background:hsla(0,0%,100%,0.3);
-        }
-        h1{
-            // position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            font-size: 72px;
-            color:#AA0601;
-            font-weight: bold;
-            white-space:nowrap
-        }
-    }
-} 
+        padding-bottom: 479px;
+        .imgMedium-img{
+            display: flex;
+            justify-content: center;
+            height: 592px;
+            h1{
+                    z-index: 2;
+                }
+            @include pad(){
+                height: 280px;
+            }
+            .d-flex{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                background-position: center center;
+                background-size: cover;
+                position: relative;
+            }
 
-// 顧客推薦
-.img-down{
-    h2{
-        padding: 0;
-        font-size: 48px;
-        margin-top: 144px
-    }
-    ul{
-        padding-top: 60px;
-        display: flex;
-        justify-content: center;
-        li{
-            margin-right: 24px;
-            max-width: 282px;
-            
-            .cardBody{
-                border: 1px solid #DEE2E6;
-                border-top: none;
-                color: #212529;
-                h6{
-                    padding: 16px 10px;
-                    font-weight: bold;
-                }
-                p{
-                    padding: 0 10px 16px;
-                    max-width: 100%;
-                }
-                .gray-text{
-                    color: #707070;
-                    
-                }
+            // 左邊戴眼鏡圖
+            .img-1{
+                background-image: url(https://i.ibb.co/12RkX3f/14.png);
+                margin-right: 15px;
+            }
+            // 右邊眼鏡框圖
+            .img-2{
+                background-image: url(https://i.ibb.co/7JPPdbK/39.png);
+                margin-left: 15px;
+            }
+            .img-item-white{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(255, 255, 255, 0.5);
+                z-index: 1;
             }
         }
     }
 }
 
+// 顧客推薦
+.imgDown{
+    margin-top: -300px;
+    padding-bottom: 80px;
+    h3{
+        text-align: center;
+        color: #fff;
+    }
+    .imgDown-items{
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        .imgDown-items-list{
+            padding-left: 12px;
+            padding-right: 12px;
+            width: 100%;
+            .cardBody{
+                border: 1px solid #DEE2E6;
+                border-top: none;
+                color: #212529;
+                p{
+                    padding: 0 10px 16px;
+                    font-weight: normal;
+                }
+                .gray-text{
+                    color: #707070;
+                }
+            }
+        }
+    }
+} 
 // 聯絡我們
 .contact{
     background: #AA06010D;
-    margin-top: 80px;
-    .container{
-        width: 762px;
-    }
     .sectionTitle{
-        font-weight: bold;
         font-size: 48px;
         padding: 64px 0 24px 0;
         text-align: center;
     }
-    .contactText{
-        font-size: 20px;
+    p{
         text-align: left;
         padding-bottom: 20px;
     }
@@ -269,7 +261,9 @@
 // footer
 .footer{
     background-color: #AA0601;
-    padding: 0 385px;
+    .container{
+        font-weight: normal;
+    }
     .footer-up{
         display: flex;
         justify-content: space-between;
@@ -287,7 +281,6 @@
                 }
             }
             .phone , .mail{
-                font-size: 36px;
                 color: #fff;
                 display: flex;
                 align-items: center;
@@ -320,17 +313,22 @@
         display: flex;
         justify-content: space-between;
         color: #fff;
-        h3{
+        .footer-down-left{
             display: flex;
             align-items: center;
-            img{
-                padding-right: 38px;
+            p{
+                color: #fff;
+                padding-left: 38px;
             }
         }
         .footer-down-right{
             display: flex;
+            align-items: center;
             li{
                 padding-left: 62px;
+                p{
+                    color: #fff;
+                }
             }
         }
     }

@@ -112,6 +112,8 @@
         color:#fff;
         padding: 64px 0 60px 0;
         text-align: center;
+        font-size: 48px;
+        font-weight: bold;
     }
 
     .imgUp{  
@@ -134,12 +136,36 @@
             align-items: flex-end;
         }
 
-        // 箭頭圖片
+        // 最右下mark 
         .more-text{
-            display: flex;
-            justify-content: flex-end;
             margin-top: 8px;
-            background-color: #fff;
+            position: relative;
+            margin-right: 77px;
+            max-width: 30%;
+
+            .more{
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+                width: 100%;
+                a{
+                    width: 315px;
+                    display: flex;
+                    background-color: #fff;
+                    font-size: 72px;
+                    line-height: 1.5;
+                    font-weight: bold;
+                    color: #AA0601;
+                    text-decoration: none;
+                    padding-left: 32px;
+                    img{
+                        margin-right: 17px;
+                    }
+                }
+            }
         }
     }
     // 中間兩大張

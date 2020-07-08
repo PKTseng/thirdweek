@@ -13,29 +13,34 @@
 
   <body>
     <header class="container-fluid navbar-light bg-red d-flex justify-content-between">
-      <div class=" d-flex align-items-center">
+      <div class=" d-flex align-items-center menu justify-content-between">
         <a href="index.html">
           <img src="./assets/images/logo-new_工作區域 1.png" alt="" class="logo">
         </a>
-      </div>
-      <ul class="text-white d-flex align-items-center m-0">
-          <li class="navList">
+        <a href="#" class="showMenu">
+          <img src="./assets/images/humberMenu.svg" alt="" class="hamburgerMenu">
+        </a>
+
+      
+      <ul class="text-white d-flex align-items-center m-0 navList">
+          <li class="navListItems">
             <a class="navItems text-white font-weight-bold" href="optical.html">系列鏡框</a>
           </li>
-          <li class="navList">
-            <a class="navItems text-white font-weight-bold" href="./store.html">門市據點</a>
+          <li class="navListItems">
+            <a class=" text-white font-weight-bold" href="./store.html">門市據點</a>
           </li>
-          <li class="navList">
-            <a class="navItems text-white font-weight-bold" href="#">部落格</a>
+          <li class="navListItems">
+            <a class=" text-white font-weight-bold" href="#">部落格</a>
           </li>
-          <li class="navList">
-            <a class="navItems text-white font-weight-bold" href="question.html">常見問題</a>
+          <li class="navListItems">
+            <a class=" text-white font-weight-bold" href="question.html">常見問題</a>
           </li>
         </ul>
+      </div>
     </header>
 
 
-    
+    <!-- 表投選單 -->
 <section class="header bg-cover"> 
   <div class="container h-100">
     <div class="d-flex justify-content-end align-items-center h-100">
@@ -52,24 +57,24 @@
   <div class="container" data-aos="fade-up"> 
     <h3 class="font-weight-bold">用專業的心，做專業的事</h3>
     <div class="row">
-      <div class="col-lg-3 text-center contentItems">
+      <div class="col-lg-3 col-md-6 text-center contentItems">
         <img src="./assets/images/iconfinder_circle-dollar_430089.svg" alt="">
         <div class="iconImg">
           <h4 class="font-weight-bold">單一價格</h4>
           <p>無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。</p>
         </div>
       </div>
-      <div class="col-lg-3 text-center contentItems">
+      <div class="col-lg-3 col-md-6 text-center contentItems">
         <img src="./assets/images/iconfinder_clock-1_430090.svg" alt="">
         <h4 class="font-weight-bold">20 分鐘即可取件</h4>
         <p>為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘 即可完成。</p>
       </div>
-      <div class="col-lg-3 text-center contentItems">
+      <div class="col-lg-3 col-md-6 text-center contentItems">
         <img src="./assets/images/iconfinder_heart_430099.svg" alt="">
         <h4 class="font-weight-bold">安心售後服務</h4>
         <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
       </div>
-      <div class="col-lg-3 text-center contentItems">
+      <div class="col-lg-3 col-md-6 text-center contentItems">
         <img src="./assets/images/iconfinder_glasses_430098.svg" alt="" class="pb-4">
         <h4 class="font-weight-bold">關於鏡片</h4>
         <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
@@ -84,9 +89,7 @@
   <ul class="productList">
     <!-- 第一張 -->
     <li class="mt-3">
-      <div class="productImg">
-        <img src="./assets/images/8.png" alt="">
-      </div>
+      <img src="./assets/images/8.png" alt="">
       <h3 class="font-weight-bold mb-0 productSubtitle">
         <img src="./assets/images/diamond.svg" alt="" class="product-icon">
         optical
@@ -94,9 +97,7 @@
     </li>
     <!-- 第二張 -->
     <li class="mt-3">
-      <div class="productImg">
-        <img src="./assets/images/pic.png" alt="">
-      </div>
+      <img src="./assets/images/pic.png" alt="">
       <h3 class="font-weight-bold mb-0 productSubtitle">
         <img src="./assets/images/Layer_1.svg" alt="" class="product-icon">
         sunglasses
@@ -104,9 +105,8 @@
     </li>
     <!-- 第三張 -->
     <li class="mt-3">
-      <div class="productImg">
-        <img src="./assets/images/28.png" alt="">
-      </div>
+
+      <img src="./assets/images/28.png" alt="">
       <h3 class="font-weight-bold d-fl productSubtitle">
         <img src="./assets/images/page-1.svg" alt="" class="product-icon">
         functional
@@ -151,8 +151,8 @@
 <!-- 顧客推薦 -->
   <div class="container recommend" data-aos="fade-up">
     <h3 class="text-white text-center font-weight-bold">顧客推薦</h3>
-    <ul class="row d-flex">
-      <li class="col-lg-3 col-6 p-0 mb-4">
+    <ul class="row d-flex recommendList">
+      <li class=" recommendItems col-lg-3 ">
         <div class="cardList">
           <img src="./assets/images/18.png" class="card-img-top " alt="...">
             <div class="card-body border-top-0">
@@ -162,7 +162,7 @@
             </div>
         </div>
       </li>
-      <li class="col-lg-3 col-6 p-0 mb-mb-4">
+      <li class=" recommendItems col-lg-3 ">
         <div class="cardList">
           <img src="./assets/images/25.png" class="card-img-top " alt="...">
             <div class="card-body border-top-0">
@@ -172,7 +172,7 @@
             </div>
         </div>
       </li>
-      <li class="col-lg-3 col-6 p-0 mb-mb-4">
+      <li class=" recommendItems col-lg-3 ">
         <div class="cardList">
           <img src="./assets/images/36.png" class="card-img-top " alt="...">
             <div class="card-body border-top-0">
@@ -182,7 +182,7 @@
             </div>
         </div>
       </li>
-      <li class="col-lg-3 col-6 p-0 mb-mb-4">
+      <li class=" recommendItems col-lg-3 ">
         <div class="cardList">
           <img src="./assets/images/45.png" class="card-img-top " alt="...">
             <div class="card-body border-top-0">
@@ -204,16 +204,16 @@
     <p class="contactText">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
     
     <form id="contact" action="" method="post">
-      <lebal for="typeName">姓名</lebal>
+      <labal for="typeName">姓名</labal>
       <input id="typeName" type="text" placeholder="陳小明">
       
-      <lebal for="typePhone">聯絡電話</lebal>
+      <labal for="typePhone">聯絡電話</labal>
       <input id="typePhone" type="text" placeholder="0912-345-678">
       
-      <lebal for="typeMail">電子郵件</lebal>
+      <labal for="typeMail">電子郵件</labal>
       <input id="typeMail" type="text" placeholder="example@email.com">
       
-      <lebal for="typeIdeas">意見反應</lebal>
+      <labal for="typeIdeas">意見反應</labal>
       <textarea id="typeIdeas" placeholder="請輸入您的意見"></textarea>
       
       <input id="agree" type="checkbox" value="agree">

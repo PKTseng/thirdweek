@@ -10849,6 +10849,10 @@ p {
   font-size: 16px;
 }
 
+small {
+  font-size: 14px;
+}
+
 .bg-cover {
   background-position: center center;
   background-size: cover;
@@ -10870,6 +10874,45 @@ ul, ol {
 a {
   color: #000;
   text-decoration: none !important;
+}
+
+.d-lg {
+  display: block;
+}
+
+.d-md {
+  display: none;
+}
+
+.d-sm {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .d-lg {
+    display: none;
+  }
+  .d-md {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .d-lg {
+    display: none;
+  }
+  .d-md {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .d-lg {
+    display: none;
+  }
+  .d-sm {
+    display: block;
+  }
 }
 
 .bg-red {
@@ -10940,9 +10983,16 @@ a {
 }
 
 .phone, .mail {
-  width: 40px;
-  height: 40px;
-  margin-right: 23px;
+  height: 36px;
+  width: 36px;
+  margin-right: 20px;
+}
+
+@media (max-width: 960px) {
+  .phone, .mail {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 hr {
@@ -10956,9 +11006,16 @@ hr {
   height: 840px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .header {
-    background-image: url(../images/rwd1/68.png);
+    background-image: url(../images/rwd/pad/index/68.png);
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    background-image: url(../images/rwd/phone/index/68.png);
+    height: 394px;
   }
 }
 
@@ -10978,7 +11035,7 @@ hr {
   font-size: 64px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .header .headerTitle h2 {
     font-size: 48px;
     padding-right: 48px;
@@ -10986,6 +11043,17 @@ hr {
   .header .headerTitle p {
     font-size: 20px;
     padding-right: 48px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header .headerTitle h2 {
+    font-size: 32px;
+    padding-right: 12px;
+  }
+  .header .headerTitle p {
+    font-size: 16px;
+    padding-right: 12px;
   }
 }
 
@@ -11009,7 +11077,7 @@ hr {
   font-weight: bold;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .content p {
     padding: 0 50px;
   }
@@ -11022,10 +11090,34 @@ hr {
   margin-bottom: 40px;
 }
 
+@media (max-width: 960px) {
+  .content .contentItems {
+    padding: 0 10%;
+  }
+}
+
 @media (max-width: 768px) {
+  .content .contentItems {
+    padding: 0 15%;
+  }
+  .content h3 {
+    font-size: 32px;
+  }
+  .content h4 {
+    font-size: 20px;
+  }
+  .content p {
+    font-size: 16px;
+  }
   .content img {
     width: 80px;
     height: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .content h3 {
+    font-size: 24px;
   }
 }
 
@@ -11037,9 +11129,15 @@ hr {
   width: 66%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .classic img {
-    width: 50%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 375px) {
+  .classic img {
+    width: 100%;
   }
 }
 
@@ -11068,7 +11166,7 @@ hr {
           flex-direction: row-reverse;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .classic .productList li:nth-child(2n) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -11087,10 +11185,35 @@ hr {
           align-items: center;
 }
 
+@media (max-width: 960px) {
+  .classic .productSubtitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 375px) {
+  .classic .productSubtitle {
+    font-size: 28px;
+  }
+}
+
 .design {
   margin-top: 80px;
-  background-image: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
+  background-image: url(../images/nick.png);
   height: 2162px;
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .design {
+    background-image: url(../images/rwd/pad/index/nick.png);
+  }
+}
+
+@media (max-width: 768px) {
+  .design {
+    background-image: url(../images/rwd/phone/index/nick.png);
+  }
 }
 
 .design h3 {
@@ -11108,10 +11231,14 @@ hr {
   max-width: 100%;
 }
 
+.design .imgMedium {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .design .imgList {
   position: relative;
-  height: 592px;
-  width: 585px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -11119,25 +11246,35 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 60px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
-.design .imgList-1 {
-  max-width: 100%;
-  background-image: url(../images/14.png);
-}
-
-.design .imgList-2 {
-  max-width: 100%;
-  background-image: url(../images/39.png);
-}
-
-.design .itemsContent {
+.design .imgList .itemsContent {
   position: absolute;
   font-size: 72px;
   color: #AA0601;
   z-index: 1;
+}
+
+@media (max-width: 960px) {
+  .design .imgList .itemsContent {
+    font-size: 32px;
+  }
+}
+
+.design .imgList-1 {
+  margin-right: 10px;
+}
+
+.design .imgList-1 img {
+  max-width: 100%;
+}
+
+.design .imgList-2 {
+  margin-left: 10px;
+}
+
+.design .imgList-2 img {
+  max-width: 100%;
 }
 
 .design .bg-white {
@@ -11168,10 +11305,9 @@ hr {
   margin: 0;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .design .recommend .recommendItems {
     margin-bottom: 40px;
-    width: 50%;
   }
 }
 
@@ -11189,8 +11325,19 @@ hr {
   margin: 0 15px;
 }
 
+.design .recommend .cardList img {
+  width: 100%;
+}
+
 .design .recommend .card-body {
   border: 1px solid gray;
+  background-color: #fff;
+}
+
+@media (max-width: 960px) {
+  .design .recommend .card-body {
+    margin-bottom: 20px;
+  }
 }
 
 .contact {
@@ -11198,9 +11345,9 @@ hr {
   margin-top: 306px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .contact {
-    margin-top: 1000px;
+    margin-top: 100px;
   }
 }
 
@@ -11356,6 +11503,16 @@ hr {
   margin-left: 12px;
 }
 
+.topMenu img {
+  color: #000000;
+}
+
+@media (max-width: 960px) {
+  .topMenu p {
+    font-size: 28px;
+  }
+}
+
 .optical h3 {
   font-size: 42px;
   line-height: 63px;
@@ -11409,6 +11566,33 @@ hr {
   color: #000;
 }
 
+.d-sm {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .glassesContent {
+    max-width: 42rem;
+  }
+}
+
+.sunImg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.topMenu img {
+  width: 48px;
+  height: 48px;
+}
+
+@media (max-width: 960px) {
+  .topMenu img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .sunglassesModel {
   width: 80%;
   font-size: 24px;
@@ -11421,7 +11605,6 @@ hr {
 }
 
 .productItems {
-  max-width: 35%;
   margin-bottom: 104px;
 }
 
@@ -11432,6 +11615,15 @@ hr {
 .jumbotronBg {
   background-image: url(../images/72.png);
   min-height: 304px;
+}
+
+@media (max-width: 768px) {
+  .jumbotronBg {
+    background-image: url(../images/rwd/phone/store/72.png);
+  }
+  .jumbotronBg h1 {
+    font-size: 48px;
+  }
 }
 
 .jumbotronBg h1 {
@@ -11448,7 +11640,7 @@ label {
 
 .locationList {
   padding: 10px 20px;
-  width: 10%;
+  width: 266px;
   margin-left: 22px;
 }
 

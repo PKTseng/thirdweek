@@ -12,32 +12,20 @@
   </head>
 
   <body>
-    <header class="container-fluid navbar-light bg-red d-flex justify-content-between">
-      <div class=" d-flex align-items-center menu justify-content-between">
-        <a href="index.html">
-          <img src="./assets/images/logo-new_工作區域 1.png" alt="" class="logo">
-        </a>
-        <a href="#" class="showMenu">
-          <img src="./assets/images/humberMenu.svg" alt="" class="hamburgerMenu">
-        </a>
-
-      
-      <ul class="text-white d-flex align-items-center m-0 navList">
-          <li class="navListItems">
-            <a class="navItems text-white font-weight-bold" href="optical.html">系列鏡框</a>
-          </li>
-          <li class="navListItems">
-            <a class=" text-white font-weight-bold" href="./store.html">門市據點</a>
-          </li>
-          <li class="navListItems">
-            <a class=" text-white font-weight-bold" href="#">部落格</a>
-          </li>
-          <li class="navListItems">
-            <a class=" text-white font-weight-bold" href="question.html">常見問題</a>
-          </li>
+    <header class="d-flex  bg-red justify-content-between align-items-center">
+      <a class="navImg" href="#">
+        <img src="./assets/images/logo.png" alt="logo">
+        <img src="./assets/images/humberMenu.svg" alt="humberMenu" class="d-none">
+      </a>
+        <ul class="d-flex navList mb-0 ">
+          <li><a href="#">系列鏡框</a></li>
+          <li><a href="#">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="#">常見問題</a></li>
         </ul>
-      </div>
     </header>
+    
+
 
 
     <!-- 表投選單 -->
@@ -83,37 +71,49 @@
 
 <!-- 經典系列鏡框 -->
 <section class="classic container">
-  <h3 class="font-weight-bold classicTitle">經典系列鏡框</h3>
-  <ul class="productList">
-    <!-- 第一張 -->
-    <li class="mt-3">
-      <img src="./assets/images/8.png" class="d-lg">
-      <img src="./assets/images/rwd/pad/index/8.png" class="d-md">
-      <img src="./assets/images/rwd/phone/index/8.png" class="d-sm">
-      <h3 class="font-weight-bold mb-0 productSubtitle">
-        <img src="./assets/images/diamond.svg" class="product-icon">
+  <h3 class="font-weight-bold classicTitle text-center">經典系列鏡框</h3>
+  <ul class="classicList ">
+    <!-- 經典系列鏡框第一張 -->
+    <li class="classicItems">
+      <div class="classicImg">
+        <img src="./assets/images/8.png" alt="">
+      </div>
+      <div class="d-flex justify-content-center">
+        <h3 class="d-flex font-weight-bold classicIcon align-items-center">
+        <img src="./assets/images/iconfinder_44_2529968.svg" alt="" class="d-lg">
+        <img src="./assets/images/rwd/pad/index/iconfinder_44_2529968.svg" alt="" class="d-md">
         optical
       </h3>
+      </div>
+      
     </li>
-    <!-- 第二張 -->
-    <li class="mt-3">
-      <img src="./assets/images/15.png" class="d-lg">
-      <img src="./assets/images/rwd/pad/index/15.png" class="d-md">
-      <img src="./assets/images/rwd/phone/index/15.png" class="d-sm">
-      <h3 class="font-weight-bold mb-0 productSubtitle">
-        <img src="./assets/images/Layer_1.svg" class="product-icon">
+<!-- 經典系列鏡框第二張 -->
+    <li class="classicItems ">
+      <div class="classicImg">
+        <img src="./assets/images/15.png" alt="" class="">
+      </div>
+      <div class="d-flex justify-content-center">
+        <h3 class="d-flex font-weight-bold classicIcon">
+        <img src="./assets/images/Layer_1.svg" alt="" class="d-lg">
+        <img src="./assets/images/rwd/pad/index/Layer_1.svg" alt="" class="d-md">
         sunglasses
       </h3>
+      </div>
+      
     </li>
-    <!-- 第三張 -->
-    <li class="mt-3">
-      <img src="./assets/images/28.png"class="d-lg">
-      <img src="./assets/images/rwd/pad/index/28.png" class="d-md">
-      <img src="./assets/images/rwd/phone/index/28.png" class="d-sm">
-      <h3 class="font-weight-bold d-fl productSubtitle">
-        <img src="./assets/images/page-1.svg" class="product-icon">
+<!-- 經典系列鏡框第三張 -->
+    <li class="classicItems">
+      <div class="classicImg">
+        <img src="./assets/images/28.png" alt="" class="">
+      </div>
+      <div class="d-flex justify-content-center">
+        <h3 class="d-flex font-weight-bold classicIcon">
+        <img src="./assets/images/Page-1.svg" alt="" class="d-lg">
+        <img src="./assets/images/rwd/pad/index/Page-1.svg" alt="" class="d-md">
         functional
       </h3>
+      </div>
+      
     </li>
   </ul>
 </section>
@@ -166,12 +166,12 @@
     </li>
   </ul>
 <!-- 顧客推薦 -->
-  <div class="container recommend" data-aos="fade-up">
+  <div class="container recommend">
     <h3 class="text-white text-center font-weight-bold">顧客推薦</h3>
     <ul class="row d-flex recommendList justify-content-center">
       <li class=" recommendItems col-lg-3 col-md-6 col-12">
         <div class="cardList">
-          <img src="./assets/images/18.png" class="card-img-top " class="d-lg">
+          <img src="./assets/images/18.png" class="card-img-top img-fluid" class="d-lg">
           <!-- <img src="./assets/images/rwd/pad/index/18.png" class="d-md"> -->
           <!-- <img src="./assets/images/rwd/phone/index/18.png" class="d-sm"> -->
             <div class="card-body border-top-0">
@@ -183,9 +183,9 @@
       </li>
       <li class=" recommendItems col-lg-3 col-md-6 col-12 ">
         <div class="cardList">
-          <img src="./assets/images/25.png" class="card-img-top "class="d-lg">
+          <img src="./assets/images/25.png" class="card-img-top img-fluid "class="d-lg">
           <!-- <img src="./assets/images/rwd/pad/index/25.png" class="d-md"> -->
-          <!-- <img src="./assets/images/rwd/phone/index/25.png" class="d-sm"> -->
+          <!-- <img src="./assets/images/rwd/phone/index/25.png" class="d-sm img-fluid"> -->
             <div class="card-body border-top-0">
               <p class="card-title">Karen</p>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
@@ -195,7 +195,7 @@
       </li>
       <li class=" recommendItems col-lg-3 col-md-6 col-12 ">
         <div class="cardList">
-          <img src="./assets/images/36.png" class="card-img-top " alt="..." class="d-lg">
+          <img src="./assets/images/36.png" class="card-img-top img-fluid " alt="..." class="d-lg">
           <!-- <img src="./assets/images/rwd/pad/index/36.png" class="d-md"> -->
           <!-- <img src="./assets/images/rwd/phone/index/36.png" class="d-sm"> -->
             <div class="card-body border-top-0">
@@ -207,7 +207,7 @@
       </li>
       <li class=" recommendItems col-lg-3 col-md-6 col-12 ">
         <div class="cardList">
-          <img src="./assets/images/45.png" class="card-img-top "class="d-lg">
+          <img src="./assets/images/45.png" class="card-img-top img-fluid "class="d-lg">
           <!-- <img src="./assets/images/rwd/pad/index/45.png" class="d-md"> -->
           <!-- <img src="./assets/images/rwd/phone/index/45.png" class="d-sm"> -->
             <div class="card-body border-top-0">
@@ -222,7 +222,7 @@
 </section>
 
 <!-- 聯絡我們 -->
-<section class="contact">
+<section class="connection">
   <div class="container">
     <h2 class="sectionTitle">聯絡我們</h2>
     <p class="contactText">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
@@ -249,6 +249,8 @@
     </form>      
   </div>
 </section>
+
+
 
     <div class="container-fluid bg-red py-5">
       <div class="container footer">

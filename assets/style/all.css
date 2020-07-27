@@ -11492,6 +11492,11 @@ hr {
   margin-bottom: 104px;
 }
 
+.glassesContent .product img {
+  width: 100%;
+  height: auto;
+}
+
 .glassesContent .color {
   width: 24px;
   height: 24px;
@@ -11570,7 +11575,8 @@ hr {
 }
 
 .productItems img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .jumbotronBg {

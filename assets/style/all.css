@@ -11474,6 +11474,10 @@ hr {
   }
 }
 
+.twoImg img {
+  max-width: 100%;
+}
+
 .optical h3 {
   font-size: 42px;
   line-height: 63px;

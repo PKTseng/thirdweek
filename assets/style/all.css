@@ -11380,6 +11380,9 @@ hr {
   .design {
     padding: 0;
   }
+  .design .top {
+    padding: 0 15px;
+  }
   .design .imgMedium {
     display: -webkit-box;
     display: -ms-flexbox;

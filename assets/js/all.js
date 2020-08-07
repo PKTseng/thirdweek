@@ -6,8 +6,10 @@ $(document).ready(function () {
     $(this).siblings().removeClass('active').find('p').slideUp();
   });
 });
-var menu = document.querySelector('.showMenu');
-menu.addEventListener('click', function () {
-  document.querySelector('.navList').style.display = "block";
+$(document).ready(function () {
+  $('.humberMenu').on('click', function (e) {
+    e.preventDefault();
+    $('.navList').toggleClass('menuShow');
+  });
 });
 //# sourceMappingURL=all.js.map

@@ -14,10 +14,10 @@
   <body>
     <header class="d-flex  bg-red justify-content-between align-items-center">
       <a class="navImg" href="./index.html">
-        <img src="./assets/images/logo.png" alt="logo">
-        <img src="./assets/images/humberMenu.svg" alt="humberMenu" class="d-none">
+        <img src="./assets/images/logo.png" class="logo">
+        <img src="./assets/images/humberMenu.svg" class="humberMenu">
       </a>
-        <ul class="d-flex navList mb-0 ">
+        <ul class="navList mb-0">
           <li><a href="./optical.html">系列鏡框</a></li>
           <li><a href="./store.html">門市據點</a></li>
           <li><a href="./blog.html">部落格</a></li>
@@ -31,19 +31,19 @@
     <section class="container">
   <ul class="row mb-0">
     <li class="col topMenu">
-      <a href="optical.html" class="d-flex align-items-center">
-        <img src="./assets/images/iconfinder_44_2529968.svg">
+      <a href="optical.html">
+        <img src="./assets/images/sunglass.svg">
         <p class="font-weight-bold">OPTICAL</p>
       </a>
     </li>
     <li class="col topMenu">
-      <a href="sunglasses.html" class="d-flex align-items-center">
+      <a href="sunglasses.html">
         <img src="./assets/images/Layer_2.svg" >
         <p class="font-weight-bold">SUNGLASSES</p>
       </a>
     </li>
     <li class="col topMenu">
-      <a href="#" class="d-flex align-items-center">
+      <a href="#">
         <img src="./assets/images/Page-2.svg">
         <p class="font-weight-bold">FUNCTIONAL</p>
       </a>
@@ -54,13 +54,21 @@
 
   <!-- 兩大圖 -->
 <ul class=" flex-nowrap d-flex justify-content-center twoImg">
-  <li class="twoImg-1" data-aos="fade-up-right">
-      <img src="./assets/images/banner-1.png" alt="" class=" d-lg">
-      <img src="./assets/images/rwd/pad/optical/2.png" alt="" class="d-md">
+  <li class="twoImg-1">
+      <img 
+        src="./assets/images/banner-1.png"  
+        class="d-lg">
+      <img 
+        src="./assets/images/rwd/pad/optical/2.png"  
+        class="d-sm">
   </li>
-  <li class="twoImg-2" data-aos="fade-up-left">
-      <img src="./assets/images/banner-2.png" alt="" class=" d-lg" >
-      <img src="./assets/images/rwd/pad/optical/11.png" alt="" class="d-md">
+  <li class="twoImg-2">
+      <img 
+        src="./assets/images/banner-2.png"  
+        class="d-lg">
+      <img 
+        src="./assets/images/rwd/pad/optical/11.png"  
+        class="d-sm">
   </li>
 </ul>
 
@@ -254,22 +262,22 @@
       <div class="container footer">
         <div class="row">
           <!-- 左邊menu -->
-          <div class="col-9 p-0">
+          <div class="col-9 p-0 footerMenu">
             <ul  class="d-flex p-0">
               <li>
-                <a class="nav-link text-white" href="#"><small>首頁</small></a>
+                <a class="nav-link text-white" href="#"><p>首頁</p></a>
               </li>
               <li>
-                <a class="nav-link text-white" href="#"><small>系列鏡框</small></a>
+                <a class="nav-link text-white" href="#"><p>系列鏡框</p></a>
               </li>
               <li>
-                <a class="nav-link text-white" href="#"><small>門市據點</small></a>
+                <a class="nav-link text-white" href="#"><p>門市據點</p></a>
               </li>
               <li>
-                <a class="nav-link text-white" href="#"><small>部落格</small></a>
+                <a class="nav-link text-white" href="#"><p>部落格</p></a>
               </li>
               <li>
-                <a class="nav-link text-white" href="#"><small>常見問題</small></a>
+                <a class="nav-link text-white" href="#"><p>常見問題</p></a>
               </li>
             </ul>
           </div>
@@ -277,44 +285,64 @@
             <ul class="communityIcon row ">
               <li class="px-2">
                 <a href="#">
-                  <img src="./assets/images/ic_social_fb.svg" alt="" class="d-lg">
-                  <img src="./assets/images/rwd/pad/index/ic_social_fb.svg" alt="" class="d-md">
+                  <img src="./assets/images/ic_social_fb.svg" alt="fb" class="d-lg">
                 </a>
               </li>
               <li class="px-2">
                 <a href="#">
-                  <img src="./assets/images/ic_social_ig.svg" alt="" class="d-lg">
-                  <img src="./assets/images/rwd/pad/index/ic_social_ig.svg" alt="" class="d-md">
+                  <img src="./assets/images/ic_social_ig.svg" alt="ig" class="d-lg">
                 </a>
               </li>
               <li class="px-2">
                 <a href="#">
-                  <img src="./assets/images/ic_social_line.svg" alt="" class="d-lg">
-                  <img src="./assets/images/rwd/pad/index/ic_social_line.svg" alt="" class="d-md">
+                  <img src="./assets/images/ic_social_line.svg" alt="line" class="d-lg">
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <div class="row">
-          <div class="col-12">
+          <div class="col-8">
             <div class="d-flex py-2 align-items-center">
-              <img src="./assets/images/ic_phone_48px.svg" class="phone d-lg">
-              <img src="./assets/images/rwd/pad/index/ic_phone_48px.svg" alt="" class="d-md phone">
+              <img 
+                src="./assets/images/ic_phone_48px.svg" 
+                class="phone d-lg">
+              <img 
+                src="./assets/images/rwd/pad/index/ic_phone_48px.svg" 
+                class="d-sm phone">
               <h4 class="text-white">0800-000-000</h4>
             </div>
             <div class="d-flex py-2 align-items-center">
-              <img src="./assets/images/ic_mail_outline_24px.svg" class="mail d-lg">
-              <img src="./assets/images/rwd/pad/index/ic_mail_outline_24px.svg" alt="" class="d-md mail">
+              <img 
+                src="./assets/images/ic_mail_outline_24px.svg" 
+                class="mail d-lg">
+              <img 
+                src="./assets/images/rwd/pad/index/ic_mail_outline_24px.svg" class="d-sm mail">
               <h4 class="text-white">glasses@business.com</h4>
+            </div>
+          </div>
+          <div  class="col-4 d-sm">
+            <div class="d-flex justify-content-center">
+            <img 
+              src="./assets/images/rwd/pad/index/ic_social_fb.svg" 
+              class="px-2 d-sm">
+            <img 
+              src="./assets/images/rwd/pad/index/ic_social_ig.svg" 
+              class="px-2 d-sm">
+            <img 
+              src="./assets/images/rwd/pad/index/ic_social_line.svg" 
+              class="px-2 d-sm">
             </div>
           </div>
         </div>
         <hr>
-        <div class="row align-items-center">
+        <div class="row footerInfo">
           <div class="col-9 d-flex align-items-center">
-            <img src="./assets/images/logo-new_工作區域 1.png" alt="" class="d-lg">
-            <small class="text-white ml-3">Copyright © 2020 Glasses.All rights reserved.</small>
+            <img 
+              src="./assets/images/logo.png" alt="logo" 
+              class="d-lg footerLogo">
+            <small class="text-white">Copyright © 2020 Glasses.All rights reserved.</small>
+            
           </div>
           <div class="col-3 d-flex justify-content-end">
             <small class="text-white mr-3">隱私權政策</small>

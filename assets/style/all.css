@@ -11564,7 +11564,7 @@ hr {
   color: #FFF;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 345px) {
   .connection {
     margin-top: 900px;
   }
@@ -11716,6 +11716,12 @@ hr {
 .glassesContent .page-link, .glassesContent .active {
   border-color: #000;
   color: #000;
+}
+
+@media (max-width: 768px) {
+  .glassesContent {
+    padding: 80px;
+  }
 }
 
 @media (max-width: 1200px) {

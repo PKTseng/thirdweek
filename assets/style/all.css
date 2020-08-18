@@ -11050,6 +11050,10 @@ hr {
   margin-right: 10px;
 }
 
+.footerInfo .footerText small {
+  margin: 0 10px 0 0;
+}
+
 @media (max-width: 768px) {
   .footerInfo {
     -webkit-box-orient: vertical;
@@ -11564,7 +11568,7 @@ hr {
   color: #FFF;
 }
 
-@media (max-width: 345px) {
+@media (max-width: 768px) {
   .connection {
     margin-top: 900px;
   }
@@ -11720,7 +11724,19 @@ hr {
 
 @media (max-width: 768px) {
   .glassesContent {
-    padding: 80px;
+    padding: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .glassesContent {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .glassesContent {
+    padding: 10px;
   }
 }
 
@@ -11844,6 +11860,12 @@ label {
   border: 1px solid #000;
   border-top: 0;
   margin-bottom: 0;
+}
+
+@media (max-width: 960px) {
+  .questionList p {
+    padding: 22px;
+  }
 }
 
 .blogMenu {

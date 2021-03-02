@@ -11136,7 +11136,7 @@ hr {
 }
 
 .content {
-  background-color: #AA06010D;
+  background-color: #aa06010d;
   padding-top: 64px;
   padding-bottom: 80px;
 }
@@ -11153,7 +11153,8 @@ hr {
   }
 }
 
-.content h3, .content h4 {
+.content h3,
+.content h4 {
   text-align: center;
   color: #650300;
 }
@@ -11235,7 +11236,7 @@ hr {
   text-transform: uppercase;
   font-style: italic;
   font-weight: 700;
-  color: #AA0601;
+  color: #aa0601;
   margin: 0 24px;
   font-size: 48px;
 }
@@ -11339,7 +11340,7 @@ hr {
 .design .imgList .itemsContent {
   position: absolute;
   font-size: 72px;
-  color: #AA0601;
+  color: #aa0601;
   z-index: 1;
 }
 
@@ -11454,8 +11455,7 @@ hr {
 
 .connection {
   padding: 15px;
-  background-color: #AA06010D;
-  margin-top: 306px;
+  background-color: #aa06010d;
 }
 
 @media (max-width: 1200px) {
@@ -11484,7 +11484,8 @@ hr {
   line-height: 30px;
 }
 
-.connection .container input[type="text"], .connection .container textarea {
+.connection .container input[type='text'],
+.connection .container textarea {
   width: 100%;
   margin-top: 4px;
   margin-bottom: 16px;
@@ -11499,47 +11500,49 @@ hr {
 }
 
 .connection .container ::-webkit-input-placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 
 .connection .container ::-moz-placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 
 .connection .container :-ms-input-placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 
 .connection .container ::-ms-input-placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 
-.connection .container ::placeholder, .connection .container input[type="submit"], .connection .container lebal {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+.connection .container ::placeholder,
+.connection .container input[type='submit'],
+.connection .container label {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 
-.connection .container input[type="checkbox"] + label {
+.connection .container input[type='checkbox'] + label {
   display: block;
   cursor: pointer;
   padding-left: 4px;
 }
 
-.connection .container input[type="checkbox"] {
+.connection .container input[type='checkbox'] {
   display: none;
 }
 
-.connection .container input[type=checkbox] + label::before {
-  content: "\2714";
+.connection .container input[type='checkbox'] + label::before {
+  content: '\2714';
   border: 1px solid #000;
   border-radius: 10%;
   display: inline-block;
@@ -11550,9 +11553,9 @@ hr {
   color: transparent;
 }
 
-.connection .container input[type="checkbox"]:checked + label:before {
-  background-color: #AA0601;
-  border-color: #AA0601;
+.connection .container input[type='checkbox']:checked + label:before {
+  background-color: #aa0601;
+  border-color: #aa0601;
   color: #fff;
 }
 
@@ -11561,12 +11564,20 @@ hr {
   text-align: center;
 }
 
-.connection .container input[type="submit"] {
+.connection .container input[type='submit'] {
+  border-radius: 10px;
   padding: 16px 58px;
   cursor: pointer;
   border: none;
-  background: #AA0601;
-  color: #FFF;
+  background: #aa0601;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.connection .container input[type='submit']:hover {
+  background: #471010;
 }
 
 @media (max-width: 768px) {

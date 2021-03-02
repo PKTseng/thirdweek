@@ -11455,13 +11455,8 @@ hr {
 
 .connection {
   padding: 15px;
+  margin-top: 300px;
   background-color: #aa06010d;
-}
-
-@media (max-width: 1200px) {
-  .connection {
-    margin-top: 100px;
-  }
 }
 
 .connection .container {
@@ -11580,7 +11575,13 @@ hr {
   background: #471010;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .connection {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 960px) {
   .connection {
     margin-top: 900px;
   }
